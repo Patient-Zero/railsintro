@@ -1,0 +1,13 @@
+<h1>User</h1>
+<p>
+  Name: <%= @user.name %>
+</p>
+<p>
+  Password: <%= @user.password %>
+</p>
+<p>
+  <%= @user.hello %>
+</p>
+
+<%= link_to("Edit User", edit_user_path) %>
+<%= link_to("Delete User", user_path, method: :delete) %>
